@@ -1,0 +1,58 @@
+### Registro de Usuario ###
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+  "username": "usuarioEjemplo",
+  "password": "Password123"
+}
+
+### Inicio de Sesión de Usuario ###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "username": "usuarioEjemplo",
+  "password": "Password123"
+}
+
+### Crear una Nota ###
+POST http://localhost:3000/notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjdjM2NmYjA5NmE5MzE4YzdiMzE2MTAiLCJpYXQiOjE3MTk0MTg3MzgsImV4cCI6MTcxOTQyMjMzOH0.gcuVemQqssFoUGYiU6mRuoqFpA2Cjl9_MOnoaH4t3TQ
+Content-Type: application/json
+
+{
+  "title": "Nota de prueba 3",
+  "content": "Contenido de la nota",
+  "status": "pending",
+  "userId": "667c3cfb096a9318c7b31610"
+}
+
+
+### Obtener Todas las Notas ###
+GET http://localhost:3000/notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjdjM2NmYjA5NmE5MzE4YzdiMzE2MTAiLCJpYXQiOjE3MTk0MTg3MzgsImV4cCI6MTcxOTQyMjMzOH0.gcuVemQqssFoUGYiU6mRuoqFpA2Cjl9_MOnoaH4t3TQ
+
+### Obtener una Nota Específica ###
+GET http://localhost:3000/notes/667c3fb0a62b5e93209eee31
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjdjM2NmYjA5NmE5MzE4YzdiMzE2MTAiLCJpYXQiOjE3MTk0MTg3MzgsImV4cCI6MTcxOTQyMjMzOH0.gcuVemQqssFoUGYiU6mRuoqFpA2Cjl9_MOnoaH4t3TQ
+
+### Filter notes by status ###
+GET http://localhost:3000/notes/status/completed
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjdjM2NmYjA5NmE5MzE4YzdiMzE2MTAiLCJpYXQiOjE3MTk0MTg3MzgsImV4cCI6MTcxOTQyMjMzOH0.gcuVemQqssFoUGYiU6mRuoqFpA2Cjl9_MOnoaH4t3TQ
+
+### Actualizar una Nota ###
+PUT http://localhost:3000/notes/667c3fb0a62b5e93209eee31
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjdjM2NmYjA5NmE5MzE4YzdiMzE2MTAiLCJpYXQiOjE3MTk0MTg3MzgsImV4cCI6MTcxOTQyMjMzOH0.gcuVemQqssFoUGYiU6mRuoqFpA2Cjl9_MOnoaH4t3TQ
+Content-Type: application/json
+
+{
+  "title": "Nota actualizada",
+  "content": "Nuevo contenido de la nota",
+  "status": "completed"
+}
+
+### Eliminar una Nota ###
+DELETE http://localhost:3000/notes/667c3fb0a62b5e93209eee31
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjdjM2NmYjA5NmE5MzE4YzdiMzE2MTAiLCJpYXQiOjE3MTk0MTg3MzgsImV4cCI6MTcxOTQyMjMzOH0.gcuVemQqssFoUGYiU6mRuoqFpA2Cjl9_MOnoaH4t3TQ
+
