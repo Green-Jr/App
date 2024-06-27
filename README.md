@@ -104,13 +104,6 @@ notes-app/
 ├── app.js
 └── package.json
 ````
-Descripción de la carpeta public La carpeta public contiene los archivos estáticos de la aplicación, que son accesibles directamente desde el navegador. Esto incluye archivos CSS, JavaScript y HTML.
-
-public/css/: Contiene los archivos de estilos CSS.
-
-styles.css: Archivo de estilos principal para la aplicación. public/js/: Contiene los archivos JavaScript.
-
-scripts.js: Archivo JavaScript principal que maneja la lógica del frontend. public/index.html: El archivo HTML principal que actúa como la interfaz de usuario de la aplicación.
 
 Contribuciones Las contribuciones son bienvenidas. Por favor, sigue estos pasos para contribuir:
 
