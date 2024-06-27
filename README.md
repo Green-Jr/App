@@ -95,12 +95,6 @@ notes-app/
 │   └── user.routes.js
 ├── middleware/
 │   └── auth.middleware.js
-├── public/
-│   ├── css/
-│   │   └── styles.css
-│   ├── js/
-│   │   └── scripts.js
-│   └── index.html
 ├── app.js
 └── package.json
 ````
